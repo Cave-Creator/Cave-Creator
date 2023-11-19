@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{600E389F-EAD1-4D8A-871D-3895E1813B95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>P2CC2.My.MyApplication</StartupObject>
+    <RootNamespace>P2CC2</RootNamespace>
+    <AssemblyName>Cave Creator</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\booge\Desktop\P2CC 2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>76</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cave Creator.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cave Creator.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CE7DE2D5E01ABA88A4DBA3FE0BBD80FB6D9A58F0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>P2CC.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cc_new_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Cave Creator.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Cave Creator.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.3.3, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.3.3\lib\net452\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.3.3, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Shell.1.1.3.3\lib\net452\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Bunifu.Framework.Lib" />
+    <Import Include="Bunifu.Framework.LICENSE" />
+    <Import Include="Bunifu.Framework.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CopiedToClipboard.Designer.vb">
+      <DependentUpon>CopiedToClipboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CopiedToClipboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\clsCompressedString.vb" />
+    <Compile Include="Custom Classes\ColourButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\customComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\customListbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\customScrollListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\customTextbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\disabledLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\Operations.vb" />
+    <Compile Include="Custom Classes\PictureButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\Shapes.vb" />
+    <Compile Include="Custom Classes\specialCheckbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\toggleButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\toggleButtonList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Classes\UnderlinedTextButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomDirectoryOptions.Designer.vb">
+      <DependentUpon>CustomDirectoryOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomDirectoryOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntityList.Designer.vb">
+      <DependentUpon>EntityList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntityList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OptionsMenu.Designer.vb">
+      <DependentUpon>OptionsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistryToolsNew.vb" />
+    <Compile Include="Simple3Des.vb" />
+    <Compile Include="SublevelGates.Designer.vb">
+      <DependentUpon>SublevelGates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SublevelGates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SublevelProperties.Designer.vb">
+      <DependentUpon>SublevelProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SublevelProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SublevelTreasures.Designer.vb">
+      <DependentUpon>SublevelTreasures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SublevelTreasures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatingForm.Designer.vb">
+      <DependentUpon>UpdatingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopiedToClipboard.resx">
+      <DependentUpon>CopiedToClipboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomDirectoryOptions.resx">
+      <DependentUpon>CustomDirectoryOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomDirectoryOptions.yo-NG.resx">
+      <DependentUpon>CustomDirectoryOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityList.resx">
+      <DependentUpon>EntityList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsMenu.resx">
+      <DependentUpon>OptionsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SublevelGates.resx">
+      <DependentUpon>SublevelGates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SublevelProperties.resx">
+      <DependentUpon>SublevelProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SublevelTreasures.resx">
+      <DependentUpon>SublevelTreasures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatingForm.resx">
+      <DependentUpon>UpdatingForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Quicksand-SemiBold.ttf" />
+    <None Include="Resources\Quicksand_VariableFont_wght.ttf" />
+    <None Include="Resources\Red_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dwarf_Red_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anode_Beetle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anode_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antenna_Beetle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Armored_Cannon_Beetle_Larva_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breadbug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulbmin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulborb_Larva_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bumbling_Snitchbug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Careening_Dirigibug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caustic_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloaking_Burrow-nit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Creeping_Chrysanthemum_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decorated_Cannon_Beetle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doodlebug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dwarf_Bulbear_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dwarf_Orange_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Sheargrub_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiery_Blowhog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiery_Bulblax_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiery_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gatling_Groink_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Greater_Spotted_Jellyfloat_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hairy_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hermit_Crawmad_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honeywisp_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iridescent_Flint_Beetle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iridescent_Glint_Beetle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lesser_Spotted_Jellyfloat_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Sheargrub_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mamuta_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mitite_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Munge_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puffy_Blowhog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ravenous_Whiskerpillar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shearwig_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skitter_Leaf_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snow_Bulborb_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spotty_Bulbear_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swooping_Snitchbug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toady_Bloyster_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unmarked_Spectralids_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volatile_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water_Dumple_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watery_Blowhog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Withering_Blowhog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wogpole_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wollywog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_Wollywog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beady_Long_Legs_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burrowing_Snagret_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emperor_Bulblax_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empress_Bulblax_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giant_Breadbug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man-at-Legs_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pileated_Snagret_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raging_Long_Legs_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ranging_Bloyster_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Segmented_Crawbster_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titan_Dweevil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waterwraith_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upDown_white.png" />
+    <None Include="Resources\Unchecked Checkbox_24px_grey.png" />
+    <None Include="Resources\Unchecked Checkbox_24px_green.png" />
+    <None Include="Resources\Trash_22px_white.png" />
+    <None Include="Resources\Trash_22px_grey.png" />
+    <None Include="Resources\Settings_24px_white.png" />
+    <None Include="Resources\Settings_24px_grey.png" />
+    <None Include="Resources\Save_24px_white.png" />
+    <None Include="Resources\Save_24px_grey.png" />
+    <None Include="Resources\Save as_24px_white.png" />
+    <None Include="Resources\Save as_24px_grey.png" />
+    <None Include="Resources\Plus Math_24px_white.png" />
+    <None Include="Resources\Plus Math_24px_grey.png" />
+    <None Include="Resources\Play_24px_white.png" />
+    <None Include="Resources\Play_24px_grey.png" />
+    <None Include="Resources\Opened Folder_24px_white.png" />
+    <None Include="Resources\Opened Folder_24px_grey.png" />
+    <None Include="Resources\Internet_24px_white.png" />
+    <None Include="Resources\Internet_24px_grey.png" />
+    <None Include="Resources\Forward_24px_white.png" />
+    <None Include="Resources\Forward_24px_grey.png" />
+    <None Include="Resources\File_24px_white.png" />
+    <None Include="Resources\File_24px_grey.png" />
+    <None Include="Resources\File Preview_24px_white.png" />
+    <None Include="Resources\File Preview_24px_grey.png" />
+    <None Include="Resources\Export_24px_white.png" />
+    <None Include="Resources\Export_24px_grey.png" />
+    <None Include="Resources\win10_white_refresh_animated_small.gif" />
+    <None Include="Resources\Upload_64px.png" />
+    <None Include="Resources\Search_26px.png" />
+    <None Include="Resources\Search_50px.png" />
+    <None Include="Resources\Verified Account_50px.png" />
+    <None Include="Resources\Red Carpet_52px.png" />
+    <None Include="Resources\pikmin3_review_12.jpg" />
+    <None Include="Resources\pikmin3_review_1.jpg" />
+    <None Include="Resources\flowerNoGif.png" />
+    <None Include="Resources\flowerGif.gif" />
+    <None Include="Resources\NewMainMenuPicture.jpg" />
+    <None Include="Resources\Subtract_20px_dark.png" />
+    <None Include="Resources\Subtract_20px.png" />
+    <None Include="Resources\Plus Math_20px.png" />
+    <None Include="Resources\Trash_20px.png" />
+    <None Include="Resources\Minus_20px.png" />
+    <None Include="Resources\Up_20px_dark.png" />
+    <None Include="Resources\Down Arrow_20px_dark.png" />
+    <None Include="Resources\Down Arrow_20px.png" />
+    <None Include="Resources\Add_20px.png" />
+    <None Include="Resources\Back_20px.png" />
+    <None Include="Resources\DiscordArt.png" />
+    <None Include="Resources\cc_new_icon.png" />
+    <None Include="Resources\cavecreatorTitle2.jpg" />
+    <None Include="Resources\bg_title_1.gif" />
+    <None Include="Resources\btn_create_hover.png" />
+    <None Include="Resources\btn_create_normal.png" />
+    <None Include="Resources\btn_open_normal.png" />
+    <None Include="Resources\btn_open_hover.png" />
+    <None Include="Resources\btn_cavenet_hover.png" />
+    <None Include="Resources\btn_cavenet_normal.png" />
+    <None Include="Resources\btn_options_hover.png" />
+    <None Include="Resources\btn_options_normal.png" />
+    <None Include="Resources\btn_discord_hover.png" />
+    <None Include="Resources\btn_discord_normal.png" />
+    <None Include="Resources\btn_about_hover.png" />
+    <None Include="Resources\btn_about_normal.png" />
+    <None Include="Resources\bg_cavenet.gif" />
+    <None Include="Resources\btn_cavenet_weekly_hover.png" />
+    <None Include="Resources\btn_cavenet_weekly_normal.png" />
+    <None Include="Resources\bg_cavenet_1.gif" />
+    <None Include="Resources\btn_cavenet_halloffame_hover.png" />
+    <None Include="Resources\btn_cavenet_halloffame_normal.png" />
+    <None Include="Resources\btn_cavenet_latest_hover.png" />
+    <None Include="Resources\btn_cavenet_latest_normal.png" />
+    <None Include="Resources\btn_cavenet_verified_hover.png" />
+    <None Include="Resources\btn_cavenet_verified_normal.png" />
+    <None Include="Resources\btn_cavenet_search_hover.png" />
+    <None Include="Resources\btn_cavenet_search_normal.png" />
+    <None Include="Resources\64_50px.png" />
+    <None Include="Resources\Back_24px_grey - Copy.png" />
+    <None Include="Resources\Back_24px_grey.png" />
+    <None Include="Resources\Back_24px_white.png" />
+    <None Include="Resources\Checked Checkbox_24px_green.png" />
+    <None Include="Resources\Checked Checkbox_24px_grey.png" />
+    <None Include="Resources\Chevron Down_14px_white.png" />
+    <None Include="Resources\Chevron Down_22px_grey.png" />
+    <None Include="Resources\Chevron Down_22px_white.png" />
+    <None Include="Resources\Chevron Left_24px_grey.png" />
+    <None Include="Resources\Chevron Left_24px_white.png" />
+    <None Include="Resources\Chevron Right_24px_grey.png" />
+    <None Include="Resources\Chevron Right_24px_white.png" />
+    <None Include="Resources\Chevron Up_14px_white.png" />
+    <None Include="Resources\Chevron Up_16px_white.png" />
+    <None Include="Resources\Chevron Up_18px_white.png" />
+    <None Include="Resources\Chevron Up_22px_grey.png" />
+    <None Include="Resources\Chevron Up_22px_white.png" />
+    <None Include="Resources\Dice_24px_grey.png" />
+    <None Include="Resources\Dice_24px_white.png" />
+    <Content Include="cc_new_icon.ico" />
+    <Content Include="Resources\Duplicate_20px_dark.png" />
+    <None Include="Resources\Up_20px.png" />
+    <None Include="Resources\Duplicate_20px_dark1.png" />
+    <None Include="Resources\Duplicate_20px.png" />
+    <None Include="Resources\Duplicate_48px.png" />
+    <None Include="Resources\cavenetbg.bmp" />
+    <None Include="Resources\Book_64px.png" />
+    <None Include="Resources\TRANSPARENT_ROUND_RECTANGLE_THICKless1.png" />
+    <None Include="Resources\TRANSPARENT_ROUND_RECTANGLE_THICKless.png" />
+    <None Include="Resources\TRANSPARENT_ROUND_RECTANGLE_THICK.png" />
+    <None Include="Resources\Notification_50px.png" />
+    <None Include="Resources\Info_64px.png" />
+    <None Include="Resources\Flower_48px.png" />
+    <None Include="Resources\Comments_64px.png" />
+    <None Include="Resources\Comments_33px.png" />
+    <None Include="Resources\flipped.png" />
+    <None Include="Resources\loading_gif4.gif" />
+    <None Include="Resources\loading_gif3.gif" />
+    <None Include="Resources\loading_gif2.gif" />
+    <None Include="Resources\loading_gif.gif" />
+    <None Include="Resources\customcontentbackground21.png" />
+    <None Include="Resources\customcontentbackground2.png" />
+    <None Include="Resources\arrowdiagonal.png" />
+    <None Include="Resources\58f8bcf70ed2bdaf7c128307.png" />
+    <None Include="Resources\Star Filled_64px.png" />
+    <None Include="Resources\Add to Favorites_64px.png" />
+    <None Include="Resources\Star_64px.png" />
+    <None Include="Resources\Home_64px.png" />
+    <None Include="Resources\zzzzzzzzzzzzzzz.png" />
+    <None Include="Resources\customcontentbackground1.png" />
+    <None Include="Resources\customcontentbackground.png" />
+    <None Include="Resources\Descriptionbackground.png" />
+    <None Include="Resources\unkaanown1.png" />
+    <None Include="Resources\unkaanown.png" />
+    <None Include="Resources\ccbg.jpg" />
+    <None Include="Resources\unknown.png" />
+    <None Include="Resources\asdsasadsa.jpg" />
+    <None Include="Resources\P2CCP_Logo1.png" />
+    <None Include="Resources\win10_White_Search_64px.png" />
+    <None Include="Resources\CaveNet_BrandNew2.gif" />
+    <None Include="Resources\win10_white_Left_64px.png" />
+    <None Include="Resources\win10_white_Help_64px.png" />
+    <None Include="Resources\win10_white_refresh_animated.gif" />
+    <None Include="Resources\win10_white_animatedRefresh.gif" />
+    <None Include="Resources\win10_WHITE_Refresh_64px.png" />
+    <None Include="Resources\CaveNetScreenBorder.png" />
+    <None Include="Resources\Restart_48px.png" />
+    <None Include="Resources\checking4UpdatesScreenBorder.png" />
+    <None Include="Resources\OptionsScreenBorder.png" />
+    <None Include="Resources\AboutScreenBorder.png" />
+    <None Include="Resources\FrontScreenBorder1.png" />
+    <None Include="Resources\win10_black_Eye_32px.png" />
+    <None Include="Resources\win10_white_Eye_32px.png" />
+    <None Include="Resources\Evangelion Wallpaper - Water Ship1.png" />
+    <None Include="Resources\fidgetdabbingkirbotree2.png" />
+    <None Include="Resources\Pikmin Wallpaper 2.jpg" />
+    <None Include="Resources\aizen is god.png" />
+    <None Include="Resources\win10_white_Delete_64px.png" />
+    <None Include="Resources\win10_white_Checkmark_64px.png" />
+    <None Include="Resources\win10_Checkmark_64px.png" />
+    <None Include="Resources\win10_Delete_64px.png" />
+    <None Include="Resources\Pik_rud.gif" />
+    <None Include="Resources\Pik_red.gif" />
+    <None Include="Resources\Request_48px.png" />
+    <None Include="Resources\Help_48px.png" />
+    <None Include="Resources\Info_48px.png" />
+    <None Include="Resources\Home_50px.png" />
+    <None Include="Resources\Settings_48px.png" />
+    <None Include="Resources\Delete_50px.png" />
+    <None Include="Resources\Close Window_48px.png" />
+    <None Include="Resources\Pik_yellow.gif" />
+    <None Include="Resources\splatoonshit.png" />
+    <None Include="Resources\blaax.png" />
+    <None Include="Resources\3borbs.png" />
+    <None Include="Resources\mariodetective.png" />
+    <None Include="Resources\cavebob.jpg" />
+    <None Include="Resources\trump.jpg" />
+    <None Include="Resources\bmdcrashed.png" />
+    <None Include="Resources\imnotblind.png" />
+    <None Include="Resources\tongueborb.png" />
+    <None Include="Resources\someonescave.png" />
+    <None Include="Resources\ripwog.png" />
+    <None Include="Resources\wraith_rollers.png" />
+    <None Include="Resources\egg.png" />
+    <None Include="Resources\Shoot_icon.png" />
+    <None Include="Resources\Figwort_icon.png" />
+    <None Include="Resources\Glowstem_icon1.png" />
+    <None Include="Resources\Glowstem_icon.png" />
+    <None Include="Resources\Seeding_Dandelion_icon.png" />
+    <None Include="Resources\Margaret_icon.png" />
+    <None Include="Resources\Horsetail_icon.png" />
+    <None Include="Resources\Foxtail_icon.png" />
+    <None Include="Resources\Fiddlehead_icon.png" />
+    <None Include="Resources\Dandelion_icon.png" />
+    <None Include="Resources\Common_Glowcap_icon.png" />
+    <None Include="Resources\Clover_icon.png" />
+    <None Include="Resources\Chiyogamipaper.png" />
+    <None Include="Resources\HermitNest.png" />
+    <None Include="Resources\BreadbugNest.png" />
+    <None Include="Resources\Crimson_Candypop_Bud_icon.png" />
+    <None Include="Resources\Lapis_Lazuli_Candypop_Bud_icon.png" />
+    <None Include="Resources\Golden_Candypop_Bud_icon.png" />
+    <None Include="Resources\Ivory_Candypop_Bud_icon.png" />
+    <None Include="Resources\Queen_Candypop_Bud_icon.png" />
+    <None Include="Resources\Violet_Candypop_Bud_icon.png" />
+    <None Include="Resources\Gas_pipe_icon.png" />
+    <None Include="Resources\Fire_geyser_icon.png" />
+    <None Include="Resources\Electrical_wire_icon.png" />
+    <None Include="Resources\Boulder_icon.png" />
+    <None Include="Resources\Bomb-rock_icon.png" />
+    <None Include="Resources\MainBackgroundBMP.bmp" />
+    <None Include="Resources\Evangelion Wallpaper - Water Ship.png" />
+    <None Include="Resources\Blurred Background 2.bmp" />
+    <None Include="Resources\Save_96px.png" />
+    <None Include="Resources\Save as_96px.png" />
+    <None Include="Resources\Open_96px.png" />
+    <None Include="Resources\Fiery_Bulblax_icon2.png" />
+    <None Include="Resources\Fiery_Bulblax_icon1.png" />
+    <None Include="Resources\Cloaking_Burrow_nit_icon.png" />
+    <None Include="Resources\Add_New_48px.png" />
+    <None Include="Resources\Pikmin3BlurredBG1.bmp" />
+    <None Include="Resources\No_Audio_32px.png" />
+    <None Include="Resources\Man_at_Legs_icon.png" />
+    <None Include="Resources\fullPlusGifLogo8.gif" />
+    <None Include="Resources\Segmented_Crawbster_icon1.png" />
+    <None Include="Resources\Trash_48px.png" />
+    <None Include="Resources\Reduce_48px.png" />
+    <None Include="Resources\Pik_blue.gif" />
+    <None Include="Resources\Audio_32px.png" />
+    <None Include="Resources\No Audio_32px.png" />
+    <None Include="Resources\GreenGradient1.bmp" />
+    <None Include="Resources\P2CCP_Icon.png" />
+    <None Include="Resources\P2CCP_Logo.png" />
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
